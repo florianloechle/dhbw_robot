@@ -4,10 +4,6 @@
   DHBW-Robot
 </h1>
 
-![](https://img.shields.io/travis/florianloechle/dhbw_robot/master.svg?style=flat)
-![](https://img.shields.io/david/florianloechle/dhbw_robot.svg?style=flat)
-![](https://img.shields.io/github/license/florianloechle/dhbw_robot.svg?style=flat)
-
 A semester project by the students of the business informatics (WI16B) course.
 We are building a robot and control it through python and javascript!
 
@@ -17,6 +13,8 @@ We are building a robot and control it through python and javascript!
 - Numpy
 - Flask
 - Click
+- RP.GPIo
+- YoloV3 Neural Network
 
 ## Install
 
@@ -28,7 +26,7 @@ pip3 install -r requirements.txt
 
 ## See it in action!
 
-Coming..
+Coming soon..
 
 ## License
 MIT
