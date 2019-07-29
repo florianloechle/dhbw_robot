@@ -1,0 +1,6 @@
+classes = 5  
+train  = team5/train.txt  
+valid  = team5/test.txt  
+test  = team5/test.txt  
+names = team5/team5.names  
+backup = backup/

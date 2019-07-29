@@ -1,0 +1,8 @@
+imutils=1.16.0
+opencv_python=4.0.0.21
+numpy=1.16.0
+argparse=1.4.0
+RPi.GPIO=0.6.5
+autopep8=1.4.3
+pep8=1.7.1
+

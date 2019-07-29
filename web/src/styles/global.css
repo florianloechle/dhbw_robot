@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 1044px) {
+  .App {
+    margin: 0 auto;
+  }
+}
+.controls .column {
+  padding: 0.2rem;
+}
+
+.speech-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7em 0.2em;
+}
+.speech {
+  border: none;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.mic {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid black;
+}
+.mic_body {
+  position: relative;
+  top: 17%;
+  left: 38%;
+  transform-origin: 20px 50px;
+}
+.mic_pill {
+  position: absolute;
+  height: 80px;
+  width: 35px;
+  background: black;
+  border-radius: 20px;
+}
+.mic_hole {
+  position: absolute;
+  height: 25px;
+  width: 8px;
+  top: 12px;
+  left: 14px;
+  background: white;
+  border-radius: 20px;
+}
+.mic_stand {
+  position: absolute;
+  top: 70px;
+  left: 10%;
+  background: black;
+  height: 30px;
+  width: 5px;
+  border-radius: 5px;
+}
+.mic_bottom {
+  position: absolute;
+  background: black;
+  border-radius: 5px;
+  height: 5px;
+  width: 35px;
+  top: 95px;
+}
+.mic.active .mic_body {
+  animation: mic 450ms forwards;
+}
+.mic.active .dots {
+  animation: dots 0.4s 500ms forwards;
+}
+.mic.active .dots_left {
+  animation: dot 1s ease infinite;
+}
+.mic.active .dots_right {
+  animation: dot 1s ease 0.2s infinite;
+}
+.mic.active .dots_middle {
+  animation: dot 1s ease 0.1s infinite;
+}
+
+
+.dots {
+  height: 100%;
+  width: 80%;
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  left: 10%;
+}
+.dots_left, .dots_middle, .dots_right {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  background: black;
+  border-radius: 50%;
+  margin: auto auto;
+}
+.dots_left {
+  left: 12%;
+}
+.dots_middle {
+  left: 42%;
+}
+.dots_right {
+  left: 72%;
+}
+
+@keyframes dots {
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes dot {
+  50% {
+    top: 35%;
+  }
+}
+@keyframes mic {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
