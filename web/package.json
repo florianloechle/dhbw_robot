@@ -6,7 +6,7 @@
     "clsx": "^1.0.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-speech-recognition": "^2.0.4",
     "spectre.css": "^0.5.8",
     "tailwindcss": "^1.0.5"
